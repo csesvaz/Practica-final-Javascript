@@ -6,7 +6,7 @@
         padding-top: 5vw;
         text-align: center; 
         background-color: beige;
-        font-size: medium;
+        font-size: 2em;
         size: 70vw;
     }
     .espacioinicial{
@@ -24,6 +24,15 @@ header{
     text-align: center; 
     background-color: beige;
     font-size: large;
+}
+#reloj{
+    border-color: white;
+    margin-left: 3vw;
+    background-color: #b1f7a3;
+    font-size: 1.2em;
+    color: black;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 main{
     background-color: rgb(183, 220, 183);
@@ -58,7 +67,7 @@ h2{
     color: black;
     }
 h2.Etiquetas{
-    font-size:medium;
+    font: size 2em;
     padding-right: 4vw;
 }
 pre{
@@ -79,7 +88,7 @@ td {
     padding-top: 2vw;
     padding-bottom: 2vw;
     padding-right:20vw;
-    font-size: large;    
+    font-size: 1em;    
 }
 .salto1{
     background-color: #f5f7a3;
@@ -88,11 +97,11 @@ td {
 #elección tbody tr{
     border: 0.3vw;
     text-align: center;
-    font-size: large;
+    font-size: 1em;
     background-color: #8873e6 !important;
 }
 p.selector{
-    font-size: larger;
+    font-size: 2em;
     font-style: oblique;
     font-weight: bold;
     background-color: aqua;
@@ -106,7 +115,7 @@ p.selector{
 
 tbody tr {
     background-color: #fadddd;
-    font-size: large;
+    font-size: 1em;
 }     
 footer{
     text-align: center; 
