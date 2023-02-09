@@ -27,8 +27,17 @@ header{
 }
 #reloj{
     border-color: white;
-    margin-left: 3vw;
+    margin-left: 20vw;
     background-color: #b1f7a3;
+    font-size: 1.2em;
+    color: black;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#relojformulario{
+    border-color: white;
+    background-color: #dcb233;
+    margin-right: 2vw;
     font-size: 1.2em;
     color: black;
     font-style: oblique;

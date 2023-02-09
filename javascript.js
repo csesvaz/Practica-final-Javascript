@@ -25,7 +25,9 @@ let reloj = function() {
 function actualizar() { 
     horaExacta=reloj(); 
     relojDigital=document.getElementById("reloj"); 
+    relojDigital1=document.getElementById("relojformulario"); 
     relojDigital.innerHTML=horaExacta;
+    relojDigital1.innerHTML=horaExacta;
     }
 setInterval(actualizar,1000); //iniciar temporizador
 console.log("Ejercicio 5 ==>");
@@ -43,7 +45,7 @@ function removeColor() {
     this.style.backgroundColor="inherit";
 }
 console.log("Ejercicio 6 ==>");
-/*Cambiamos la imagen en un click, creamos la variable imagen 1 e imagen 2 fuera de la 
+/*Cambiamos la imagen en un click, creamos la variable imagen1 e imagen2 fuera de la 
 funcion para que existan en el ámbito global y no sólo local*/
 let imagen1=1;
 function cambiarImagen() {
