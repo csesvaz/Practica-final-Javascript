@@ -1,4 +1,4 @@
-`[
+const nombre=`[
     {
       "name": "Leanne Graham",
       "username": "Bret",
@@ -239,4 +239,4 @@
       },
        "url": "https://prueba.dev/api/users/10/"
     }
-  ]`
+  ]`;
