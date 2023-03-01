@@ -463,7 +463,7 @@ function filtrarCiudad(ciudad) {
     );
   });
 }
-
+let selectorCiudad=document.querySelector(".selectorCiudad");
 selectorCiudad.addEventListener("change", () => {
   let ciudadSeleccionada = selectorCiudad.value;
   if (ciudadSeleccionada == "Gwenborough") {
