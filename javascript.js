@@ -71,7 +71,7 @@ funcion para que existan en el ámbito global y no sólo local*/
 let imagen1 = 1;
 //Funcion de cambiar imagen.
 let imagen = document.querySelector(".img-fluid");
-imagen.addEventListener("click",function cambiarImagen() {
+imagen.addEventListener("click", function cambiarImagen() {
   if (imagen1 == 1) {
     imagen.src = "./assets/escuela1.webp";
     imagen1 = 2;
@@ -341,12 +341,12 @@ let boton = document.getElementById("abrirModal");
 let span = document.getElementsByClassName("cerrar")[0];
 
 // Cuando el usuario hace click en el botón, se abre la ventana
-boton.addEventListener("click", function (event) {
+boton.addEventListener("click", function () {
   modal.style.display = "block";
 });
 
 // Si el usuario hace click en la x, la ventana se cierra
-span.addEventListener("click", function (event) {
+span.addEventListener("click", function () {
   modal.style.display = "none";
 });
 
@@ -386,14 +386,45 @@ console.log(
 console.log("Ejercicio 16 ==>");
 //Insertamos un select al principio del modal para seleccionar ciudad.
 
-listaUsuarios.insertAdjacentHTML(
-  "afterbegin",
-  `<select class="select" id="selectorCiudad" name="ciudad" required >
-                        <option>Gwenborough</option>
-                        <option>Wisokyburgh</option>
+function crearDatosModal() {
+  listaUsuarios.insertAdjacentHTML(
+    "afterbegin",
+    `<select class="selectorCiudad" name="ciudad" required >
+  <option value="">--Seleccione una ciudad--</option>
+<option value="Gwenborough">Gwenborough</option>
+<option value="Wisokyburgh">Wisokyburgh</option>
 </select>
 <p></p>`
-);
+  );
+
+  listaUsuarios.insertAdjacentHTML(
+    "beforeend",
+    `
+  <div><select class="selectorUsuarios" name="usuarios" required >
+      </select>
+      <p></p>
+  </div>`
+  );
+  nombreMapeado.forEach((ele) => {
+    document.querySelector(".selectorUsuarios").insertAdjacentHTML(
+      "beforeend",
+      `<option style="colum-count:2">${Usuario.getNombre(ele)}
+          <p>${ele.filtarDireccion()}</p>
+      </option>`
+    );
+  });
+
+  nombreMapeado.forEach((ele) => {
+    document.querySelector(".selectorUsuarios").insertAdjacentHTML(
+      "beforeend",
+      `<option style="colum-count:2">${Usuario.getNombre(ele)}
+      <p>${ele.filtarDireccion()}</p>
+  </option>`
+    );
+  });
+}
+
+crearDatosModal();
 function filtrarCiudad(ciudad) {
   let usuarios = [];
   let textoFiltro = "";
@@ -403,61 +434,42 @@ function filtrarCiudad(ciudad) {
       textoFiltro += `<span style="color: ${color}">-${ele.mostrarUsuarios()}</span>\n`;
       usuarios.push(ele);
     }
-    listaUsuarios.innerHTML = textoFiltro;
-    listaUsuarios.insertAdjacentHTML(
-      "beforeend",
-      `<p>${calcularDatos(usuarios)}</p>`
-    );
-    listaUsuarios.insertAdjacentHTML(
-      "afterbegin",
-      `<select class="select" id ="selectorCiudad" name="ciudad" required >
-                        <option>Gwenborough</option>
-                        <option>Wisokyburgh</option>
-</select>
-<p></p>`
-    );
-    listaUsuarios.insertAdjacentHTML(
-      "beforeend",
-      `
-    <div>
-        <select class="select" id="selectorUsuarios" name="usuarios" required >
+  });
+
+  listaUsuarios.innerHTML = "";
+  listaUsuarios.insertAdjacentHTML(
+    "afterbegin",
+    `<select class="selectorCiudad" name="ciudad" required >
+        <option value="">--Seleccione una ciudad--</option>
+        <option value="Gwenborough">Gwenborough</option>
+        <option value="Wisokyburgh">Wisokyburgh</option>
+      </select>
+      <p></p>
+      ${textoFiltro}
+      <p>${calcularDatos(usuarios)}</p>
+      <div>
+        <select class="selectorUsuarios" name="usuarios" required >
         </select>
         <p></p>
-    </div>`
-    );
-  });
+      </div>`
+  );
+
   nombreMapeado.forEach((ele) => {
-    document.getElementById("selectorUsuarios").insertAdjacentHTML(
+    document.querySelector(".selectorUsuarios").insertAdjacentHTML(
       "beforeend",
       `<option style="colum-count:2">${Usuario.getNombre(ele)}
-        <p>${ele.filtarDireccion()}</p>
-    </option>`
+          <p>${ele.filtarDireccion()}</p>
+        </option>`
     );
   });
 }
 
-let selectorCiudad = document.getElementById("selectorCiudad");
-selectorCiudad.addEventListener("change", (event) => {
-  let ciudadSeleccionada = event.target.value;
-  if (ciudadSeleccionada == "") {
-    listaUsuarios.insertAdjacentHTML(
-      "afterbegin",
-      mostrarUsuariosPorColores(nombreMapeado)
-    );
-    listaUsuarios.insertAdjacentHTML(
-      "beforeend",
-      `<p>${calcularDatos(nombreMapeado)}</p>`
-    );
-    listaUsuarios.insertAdjacentHTML(
-      "afterbegin",
-      `<select class="select" id="selectorCiudad" name="ciudad" required >
-                        <option>Gwenborough</option>
-                        <option>Wisokyburgh</option>
-</select>
-<p></p>`
-    );
-  } else {
-    filtrarCiudad(ciudadSeleccionada);
+selectorCiudad.addEventListener("change", () => {
+  let ciudadSeleccionada = selectorCiudad.value;
+  if (ciudadSeleccionada == "Gwenborough") {
+    filtrarCiudad("Gwenborough");
+  } else if (ciudadSeleccionada == "Wisokyburgh") {
+    filtrarCiudad("Wisokyburgh");
   }
 });
 
