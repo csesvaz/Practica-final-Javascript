@@ -1,4 +1,4 @@
-const nombre=`[
+const nombre = `[
     {
       "name": "Leanne Graham",
       "username": "Bret",

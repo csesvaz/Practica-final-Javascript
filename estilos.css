@@ -1,174 +1,174 @@
-@media all and (max-width: 550px){
-    main{
-        background-color: rgb(183, 220, 183);
-    }
-    header{
-        padding-top: 5vw;
-        text-align: center; 
-        background-color: beige;
-        font-size: 2em;
-        size: 70vw;
-    }
-    .espacioinicial{
-        height:8vw;
-    }
-    #myCarousel{
-        font-size:x-small
-    } 
-}
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}  
-header{
-    padding-top: 6vw;
-    text-align: center; 
-    background-color: beige;
-    font-size: large;
-}
-#nav-item{
-    font-size: 1.2em;
-    font-style:italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 15vw;
-}
-#reloj{
-    border-color: white;
-    background-color: #b1f7a3;
-    font-size: 1.2em;
-    color: black;
-    font-style: oblique;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-#relojformulario{
-    border-color: white;
-    background-color: #dcb233;
-    margin-right: 2vw;
-    font-size: 1.2em;
-    color: black;
-    font-style: oblique;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-main{
+@media all and (max-width: 550px) {
+  main {
     background-color: rgb(183, 220, 183);
-}
-#ET{
-    width:4vw;  
-    padding-left: 1vw;
-    margin-bottom: 1vw; 
-}
-#ET2{
-    width:4vw;  
-    padding-left: 1vw;  
-    margin-left: 1vw;
-    margin-bottom: 1vw;
-}
-.col-md-2{
-    margin-top: 6vw;
-    margin-right: 3vw;
-    margin-left: 3vw;
+  }
+  header {
+    padding-top: 5vw;
     text-align: center;
+    background-color: beige;
+    font-size: 2em;
+    size: 70vw;
+  }
+  .espacioinicial {
+    height: 8vw;
+  }
+  #myCarousel {
+    font-size: x-small;
+  }
 }
-h1{
-    color: black;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.iniciotabla1{
-    margin-top: 2vw;
+header {
+  padding-top: 6vw;
+  text-align: center;
+  background-color: beige;
+  font-size: large;
 }
-#menuincidencias{
-    text-align: center;
+#nav-item {
+  font-size: 1.2em;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 15vw;
 }
-h2{
-    color: black;
-    }
-h2.Etiquetas{
-    font: size 2em;
-    padding-right: 4vw;
+#reloj {
+  border-color: white;
+  background-color: #b1f7a3;
+  font-size: 1.2em;
+  color: black;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-pre{
-    padding-top: 3vw;
-    }
+#relojformulario {
+  border-color: white;
+  background-color: #dcb233;
+  margin-right: 2vw;
+  font-size: 1.2em;
+  color: black;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+main {
+  background-color: rgb(183, 220, 183);
+}
+#ET {
+  width: 4vw;
+  padding-left: 1vw;
+  margin-bottom: 1vw;
+}
+#ET2 {
+  width: 4vw;
+  padding-left: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+.col-md-2 {
+  margin-top: 6vw;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  text-align: center;
+}
+h1 {
+  color: black;
+}
+.iniciotabla1 {
+  margin-top: 2vw;
+}
+#menuincidencias {
+  text-align: center;
+}
+h2 {
+  color: black;
+}
+h2.Etiquetas {
+  font: size 2em;
+  padding-right: 4vw;
+}
+pre {
+  padding-top: 3vw;
+}
 table {
-    border: 0.2vw solid black;
-    text-align: right;
-    margin-left: 2vw;
-    row-gap:1vw;
-    font-family: serif;
-    min-width: 30vw;
+  border: 0.2vw solid black;
+  text-align: right;
+  margin-left: 2vw;
+  row-gap: 1vw;
+  font-family: serif;
+  min-width: 30vw;
 }
 td {
-    border: 1px solid black;
-    text-align: left;
-    padding-left: 2vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    padding-right:20vw;
-    font-size: 1em;    
+  border: 1px solid black;
+  text-align: left;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-right: 20vw;
+  font-size: 1em;
 }
-.salto1{
-    background-color: #f5f7a3;
-    padding-top: 0px!important;
+.salto1 {
+  background-color: #f5f7a3;
+  padding-top: 0px !important;
 }
-#elección tbody tr{
-    border: 0.3vw;
-    text-align: center;
-    font-size: 1em;
-    background-color: #8873e6 !important;
+#elección tbody tr {
+  border: 0.3vw;
+  text-align: center;
+  font-size: 1em;
+  background-color: #8873e6 !important;
 }
-p.selector{
-    font-size: 2em;
-    font-style: oblique;
-    font-weight: bold;
-    background-color: aqua;
-    border-color: black;
-    border-width: medium;
-    border-style: groove;
-    padding-left: 2vw;
-    margin-left: 2vw;
-    text-align: center;
-    }
+p.selector {
+  font-size: 2em;
+  font-style: oblique;
+  font-weight: bold;
+  background-color: aqua;
+  border-color: black;
+  border-width: medium;
+  border-style: groove;
+  padding-left: 2vw;
+  margin-left: 2vw;
+  text-align: center;
+}
 
 tbody tr {
-    background-color: #fadddd;
-    font-size: 1em;
-}     
-footer{
-    text-align: center; 
-    margin-top: 2vw;
+  background-color: #fadddd;
+  font-size: 1em;
 }
-#base1{
-    padding-right: 1vw;
-    border-collapse: collapse;
-    width: 45vw;
-    height: 25vw;
+footer {
+  text-align: center;
+  margin-top: 2vw;
 }
-#base2{
-    border-collapse: collapse;
-    width: 40vw;
-    height: 25vw;
+#base1 {
+  padding-right: 1vw;
+  border-collapse: collapse;
+  width: 45vw;
+  height: 25vw;
 }
-#titulo{
-font-style: italic;
+#base2 {
+  border-collapse: collapse;
+  width: 40vw;
+  height: 25vw;
 }
-textarea{
-    size: 15vw;
+#titulo {
+  font-style: italic;
 }
-.video{
-    border: 0.3vw;
-    border-color: black;
-    margin-left: 21vw;
-    margin-right: 20vw;
-    margin-top: 2vw;
-    text-align: center;
-    max-width: 50vw;
+textarea {
+  size: 15vw;
 }
-.frontal{
-    display: inline-flex;
+.video {
+  border: 0.3vw;
+  border-color: black;
+  margin-left: 21vw;
+  margin-right: 20vw;
+  margin-top: 2vw;
+  text-align: center;
+  max-width: 50vw;
 }
-.botonUrgencia{
-    margin-left: 1.5vw;
+.frontal {
+  display: inline-flex;
 }
-.TelefonosContacto{
-        margin-top: 2vw;
+.botonUrgencia {
+  margin-left: 1.5vw;
+}
+.TelefonosContacto {
+  margin-top: 2vw;
 }
 /* Fondo modal: negro con opacidad al 50% */
 .modal1 {
@@ -180,7 +180,7 @@ textarea{
   width: 100%; /* Ancho completo */
   height: 100%; /* Algura completa */
   overflow: auto; /* Se activará el scroll si es necesario */
-  background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
 }
 
 /* Ventana o caja modal */
@@ -193,18 +193,30 @@ textarea{
   -webkit-animation-name: animarsuperior;
   -webkit-animation-duration: 0.5s;
   animation-name: animarsuperior;
-  animation-duration: 0.5s
+  animation-duration: 0.5s;
 }
 
 /* Animación */
 @-webkit-keyframes animatetop {
-  from {top:-30vw; opacity:0} 
-  to {top:0; opacity:1}
+  from {
+    top: -30vw;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animarsuperior {
-  from {top:-30vw; opacity:0}
-  to {top:0; opacity:1}
+  from {
+    top: -30vw;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* Botón cerrar */
